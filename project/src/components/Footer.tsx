@@ -1,4 +1,4 @@
-import { Code2, Heart } from 'lucide-react';
+import { Code2, Heart } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -13,7 +13,9 @@ export default function Footer() {
           <Heart size={12} className="text-rose-400 fill-rose-400 mx-1" />
           <span>React, TypeScript & Tailwind</span>
         </div>
-        <div className="font-mono text-xs">© 2025 Ayesha</div>
+        <div className="font-mono text-xs">
+          © {new Date().getFullYear()} Ayesha
+        </div>
       </div>
     </footer>
   );

@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react';
 import { Mail, Phone, Linkedin, ChevronDown, Sparkles } from 'lucide-react';
 
 const roles = [
-  'Frontend Developer',
-  'React & Next.js Engineer',
-  'Web3 Builder',
-  'TypeScript Enthusiast',
-  'UI/UX Craftsperson',
+  'Frontend Engineer (React / Next.js)',
+  'Product-minded UI Engineer',
+  'Design Systems & Component Architecture',
+  'Performance, Accessibility & UX Polish',
+  'Full‑stack growth (Node.js / NestJS)',
+  'Web3 integrations (EVM / Solana)',
 ];
 
 export default function Hero() {
@@ -60,12 +61,11 @@ export default function Hero() {
         </div>
 
         {/* Name */}
-        <h1
-          className={`text-5xl sm:text-6xl md:text-7xl font-bold mb-4 transition-all duration-700 delay-100 ${
-            loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-          }`}
-        >
-          <span className="glitch text-white" data-text="Ayesha">Ayesha</span>
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 text-white tracking-tight">
+          <span className="relative inline-block">
+            Ayesha
+            <span className="absolute left-0 -bottom-2 h-px w-full bg-gradient-to-r from-transparent via-sky-400/60 to-transparent" />
+          </span>
         </h1>
 
         {/* Typewriter */}
@@ -101,8 +101,9 @@ export default function Hero() {
             loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
-          Frontend Developer building scalable, high-performance web applications with React, Next.js &amp; TypeScript.
-          Hands-on with Web3/Blockchain on Ethereum &amp; Solana. Expanding into full-stack with Node.js &amp; NestJS.
+          Frontend Engineer focused on building fast, accessible interfaces and maintainable component systems with React, Next.js
+          &amp; TypeScript. Experienced with Web3 integrations (EVM &amp; Solana) and expanding into full‑stack delivery with Node.js
+          &amp; NestJS.
         </p>
 
         {/* CTA links */}
@@ -142,7 +143,7 @@ export default function Hero() {
             loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
-          {['React.js', 'Next.js', 'TypeScript', 'Node.js', 'Web3', 'Solana', 'Ethereum', 'Tailwind'].map((t) => (
+          {['React.js', 'Next.js', 'Angular', 'TypeScript', 'Node.js', 'NestJS', 'Web3', 'Solana', 'Ethereum', 'Tailwind'].map((t) => (
             <span
               key={t}
               className="px-3 py-1 rounded-md bg-slate-800/60 border border-slate-700/40 text-slate-400 text-xs font-mono hover:border-sky-500/40 hover:text-sky-400 transition-colors cursor-default"
