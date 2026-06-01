@@ -11,14 +11,14 @@ const experiences = [
     type: 'Full-time',
     description: 'A company specializing in developing web and mobile applications.',
     points: [
-      'Built scalable, responsive web applications using React.js, Next.js, and Angular with cross-browser compatibility',
+      'Built scalable, responsive web applications using ReactJS, NextJS, and Angular with cross-browser compatibility',
       'Designed component-based architecture to improve maintainability and scalability',
       'Developed and integrated RESTful APIs for efficient frontend-backend communication',
       'Optimized application performance, reducing load times and improving user experience',
       'Developed Web3 dApps on Ethereum and Solana with smart contract interactions',
       'Collaborated with cross-functional teams to deliver production-ready solutions',
     ],
-    tags: ['React.js', 'Next.js', 'Angular', 'TypeScript', 'Web3', 'Ethereum', 'Solana'],
+    tags: ['ReactJS', 'NextJS', 'Angular', 'TypeScript', 'Web3', 'Ethereum', 'Solana'],
     current: true,
   },
   {
@@ -29,13 +29,13 @@ const experiences = [
     type: 'Remote',
     description: 'A remote tech company focusing on AI-driven solutions.',
     points: [
-      'Developed and maintained scalable frontend architecture for AI-based applications using React.js',
+      'Developed and maintained scalable frontend architecture for AI-based applications using ReactJS',
       'Built responsive, high-performance UI components for real-time user interactions',
       'Integrated Solana SDK for blockchain-based features and smooth wallet interactions',
       'Improved application performance and code quality through optimization and best practices',
       'Worked closely with backend and product teams to deliver user-centric features',
     ],
-    tags: ['React.js', 'Solana SDK', 'AI', 'Performance'],
+    tags: ['ReactJS', 'Solana SDK', 'AI', 'Performance'],
     current: false,
   },
   {

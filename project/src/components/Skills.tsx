@@ -6,8 +6,8 @@ const skillGroups = [
     label: "Frontend",
     color: "sky",
     skills: [
-      { name: "React.js", level: 95 },
-      { name: "Next.js", level: 90 },
+      { name: "ReactJS", level: 95 },
+      { name: "NextJS", level: 90 },
       { name: "Angular", level: 80 },
       { name: "JavaScript ES6+", level: 92 },
       { name: "HTML5 / CSS3", level: 95 },

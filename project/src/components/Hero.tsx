@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Mail, Phone, Linkedin, ChevronDown, Sparkles } from 'lucide-react';
 
 const roles = [
-  'Frontend Engineer (React / Next.js)',
+  'Frontend Engineer (React / NextJS)',
   'Product-minded UI Engineer',
   'Design Systems & Component Architecture',
   'Performance, Accessibility & UX Polish',
@@ -101,7 +101,7 @@ export default function Hero() {
             loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
-          Frontend Engineer focused on building fast, accessible interfaces and maintainable component systems with React, Next.js
+          Frontend Engineer focused on building fast, accessible interfaces and maintainable component systems with React, NextJS
           &amp; TypeScript. Experienced with Web3 integrations (EVM &amp; Solana) and expanding into full‑stack delivery with Node.js
           &amp; NestJS.
         </p>
@@ -143,7 +143,7 @@ export default function Hero() {
             loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
-          {['React.js', 'Next.js', 'Angular', 'TypeScript', 'Node.js', 'NestJS', 'Web3', 'Solana', 'Ethereum', 'Tailwind'].map((t) => (
+          {['ReactJS', 'NextJS', 'Angular', 'TypeScript', 'Node.js', 'NestJS', 'Web3', 'Solana', 'Ethereum', 'Tailwind'].map((t) => (
             <span
               key={t}
               className="px-3 py-1 rounded-md bg-slate-800/60 border border-slate-700/40 text-slate-400 text-xs font-mono hover:border-sky-500/40 hover:text-sky-400 transition-colors cursor-default"

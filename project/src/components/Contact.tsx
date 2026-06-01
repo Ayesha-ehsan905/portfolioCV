@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, MapPin, Send } from 'lucide-react';
+import { Mail,  Linkedin, MapPin, Send } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { SectionHeader } from './Skills';
 
@@ -10,13 +10,13 @@ const contacts = [
     href: 'mailto:aishaehsan0@gmail.com',
     color: 'sky',
   },
-  {
-    icon: Phone,
-    label: 'Phone',
-    value: '+92 336 501 0495',
-    href: 'tel:+923365010495',
-    color: 'cyan',
-  },
+  // {
+  //   icon: Phone,
+  //   label: 'Phone',
+  //   value: '+92 336 501 0495',
+  //   href: 'tel:+923365010495',
+  //   color: 'cyan',
+  // },
   {
     icon: Linkedin,
     label: 'LinkedIn',
