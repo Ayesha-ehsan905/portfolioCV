@@ -119,13 +119,13 @@ export default function Hero() {
             <Mail size={15} />
             Get in Touch
           </a>
-          <a
+          {/* <a
             href="tel:+923365010495"
             className="flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-800/80 border border-slate-700/60 hover:border-sky-500/50 text-slate-300 hover:text-sky-400 font-semibold text-sm transition-all duration-200 hover:-translate-y-0.5"
           >
             <Phone size={15} />
             +92 336 501 0495
-          </a>
+          </a> */}
           <a
             href="https://linkedin.com"
             target="_blank"
