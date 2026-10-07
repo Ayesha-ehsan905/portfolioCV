@@ -5,6 +5,26 @@ import { SectionHeader } from './Skills';
 const experiences = [
   {
     role: 'Frontend Developer',
+    company: 'Tizo',
+    companyUrl: 'https://www.linkedin.com/company/tizoplatform/',
+    location: 'Remote',
+    period: 'Aug 2026 – Present',
+    type: 'Full-time',
+    description: 'CRM platform company building multi-portal business workflows.',
+    points: [
+      'Work on a CRM platform built with Next.js, React, and TypeScript, developing features across key business workflows',
+      'Translate product requirements into clean, responsive, and reusable frontend experiences',
+      'Manage API-driven data and application state using TanStack React Query',
+      'Develop and improve complex user flows while maintaining consistency across the platform',
+      'Identify and resolve frontend issues, contributing to application stability, performance, and security',
+      'Work with backend engineers, designers, and product teams throughout the development lifecycle',
+      'Contribute to continuous improvements in the platform through code reviews, testing, and frontend best practices',
+    ],
+    tags: ['Next.js', 'React', 'TypeScript', 'TanStack Query', 'CRM'],
+    current: true,
+  },
+  {
+    role: 'Frontend Developer',
     company: 'Ideofuzion',
     location: 'Islamabad',
     period: 'Aug 2022 – Present',
@@ -97,7 +117,18 @@ export default function Experience() {
                       </div>
                       <div className="flex items-center gap-1 mt-1">
                         <Briefcase size={13} className="text-sky-400" />
-                        <span className="text-sky-400 font-semibold text-sm">{exp.company}</span>
+                        {exp.companyUrl ? (
+                          <a
+                            href={exp.companyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sky-400 font-semibold text-sm hover:text-sky-300 transition-colors"
+                          >
+                            {exp.company}
+                          </a>
+                        ) : (
+                          <span className="text-sky-400 font-semibold text-sm">{exp.company}</span>
+                        )}
                       </div>
                     </div>
                     <div className="flex flex-col items-start sm:items-end gap-1 text-xs text-slate-500 font-mono shrink-0">

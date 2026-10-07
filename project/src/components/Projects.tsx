@@ -1,8 +1,23 @@
-import { ExternalLink, Shield, MessageSquare, Bot, Wallet } from "lucide-react";
+import { ExternalLink, Shield, MessageSquare, Bot, Wallet, LayoutDashboard } from "lucide-react";
 import { useInView } from "../hooks/useInView";
 import { SectionHeader } from "./Skills";
 
 const projects = [
+  {
+    title: "Tizo CRM Platform",
+    icon: LayoutDashboard,
+    desc: "Fully dynamic CRM platform with two portals — CMS and Member — built with Next.js, React, and TypeScript for complex business workflows and API-driven experiences.",
+    tags: ["Next.js", "React", "TypeScript", "TanStack Query", "CRM"],
+    links: [
+      { label: "CMS Portal", href: "https://nafncms-portal-testing.tizoapp.com/" },
+      { label: "Member Portal", href: "https://nafnmember-portal-testing.tizoapp.com/" },
+    ],
+    color: "sky",
+    gradient: "from-sky-500/10 to-blue-500/5",
+    border: "border-sky-500/20",
+    iconBg: "bg-sky-500/10",
+    iconColor: "text-sky-400",
+  },
   {
     title: "DLT Alert",
     icon: Shield,
@@ -118,7 +133,7 @@ export default function Projects() {
                   >
                     <Icon size={22} className={p.iconColor} />
                   </div>
-                  {p.href ? (
+                  {"href" in p && p.href ? (
                     <a
                       href={p.href}
                       target="_blank"
@@ -128,18 +143,35 @@ export default function Projects() {
                     >
                       <ExternalLink size={16} />
                     </a>
-                  ) : (
+                  ) : !("links" in p && p.links) ? (
                     <ExternalLink
                       size={16}
                       className="text-slate-700/70 mt-1"
                     />
-                  )}
+                  ) : null}
                 </div>
 
                 <h3 className="text-white font-bold text-xl mb-3">{p.title}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed mb-5">
                   {p.desc}
                 </p>
+
+                {"links" in p && p.links && (
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {p.links.map((link) => (
+                      <a
+                        key={link.href}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border text-xs font-mono transition-colors hover:bg-white/5 ${tagTextMap[p.color]}`}
+                      >
+                        {link.label}
+                        <ExternalLink size={12} />
+                      </a>
+                    ))}
+                  </div>
+                )}
 
                 <div className="flex flex-wrap gap-2">
                   {p.tags.map((t) => (
