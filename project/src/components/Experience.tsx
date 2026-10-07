@@ -27,7 +27,7 @@ const experiences = [
     role: 'Frontend Developer',
     company: 'Ideofuzion',
     location: 'Islamabad',
-    period: 'Aug 2022 – Present',
+    period: 'Aug 2022 – Jul 2026',
     type: 'Full-time',
     description: 'A company specializing in developing web and mobile applications.',
     points: [
@@ -39,7 +39,7 @@ const experiences = [
       'Collaborated with cross-functional teams to deliver production-ready solutions',
     ],
     tags: ['ReactJS', 'NextJS', 'Angular', 'TypeScript', 'Web3', 'Ethereum', 'Solana'],
-    current: true,
+    current: false,
   },
   {
     role: 'Frontend Developer',
